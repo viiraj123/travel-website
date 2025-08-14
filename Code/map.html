@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RoamScape - Map</title>
+
+  <!-- 🌿 Custom CSS -->
+  <link rel="stylesheet" href="map.css" />
+
+  <!-- 🗺️ Leaflet Map CSS -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44c="
+    crossorigin=""
+  />
+</head>
+<body>
+
+  <!-- 🌍 Header -->
+  <header>
+    <h1>RoamScape - Travel Map</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="journal.html">Journal</a>
+      <a href="map.html" class="active">Map</a>
+      <a href="gallery.html">Gallery</a>
+    </nav>
+  </header>
+
+  <!-- 🔍 Location Search -->
+  <section class="search-section">
+    <h2>Search & Add Location</h2>
+    <form id="locationSearchForm">
+      <input type="text" id="locationInput" placeholder="Search a place..." required />
+      <button type="submit">Add</button>
+    </form>
+  </section>
+
+  <!-- 🗺️ Map and Visited Places -->
+  <section class="map-section">
+    <div id="map"></div>
+    <div class="location-list">
+      <h2>Visited Places</h2>
+      <ul id="placeList">
+        
+      </ul>
+    </div>
+  </section>
+
+  <!-- 🧭 Leaflet JS -->
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-o9N1jL/4kBxTRg6ML4Q0ZytC1xzVgMuej3r9g1kD1Uo="
+    crossorigin=""
+  ></script>
+
+  <!-- 🧠 Custom JS -->
+  <script src="map.js"></script>
+</body>
+</html>

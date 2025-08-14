@@ -1,0 +1,136 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #f4fdf9, #eafaf1);
+  color: #333;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  background: linear-gradient(to right, #388e3c, #66bb6a);
+  color: white;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: 500;
+  transition: opacity 0.3s;
+}
+
+nav a:hover {
+  opacity: 0.85;
+}
+
+nav a.active {
+  text-decoration: underline;
+}
+
+/* Journal Section */
+.journal-section {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+}
+
+.journal-section h2 {
+  font-size: 1.8rem;
+  color: #2e7d32;
+  margin-bottom: 1rem;
+}
+
+/* Journal Form */
+.journal-form {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.05);
+  margin-bottom: 2rem;
+}
+
+.journal-form input,
+.journal-form textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+.journal-form input:focus,
+.journal-form textarea:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+.journal-form button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.journal-form button:hover {
+  background-color: #388e3c;
+}
+
+/* Entries List */
+.entries {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.entry {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.05);
+}
+
+.entry h3 {
+  color: #2e7d32;
+  margin-bottom: 0.5rem;
+}
+
+.entry p {
+  line-height: 1.6;
+  color: #444;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  nav a {
+    display: block;
+    margin: 0.5rem 0;
+  }
+
+  .journal-section {
+    padding: 1rem;
+  }
+}

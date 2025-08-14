@@ -1,0 +1,156 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #eafaf1, #f4fdf9);
+  color: #333;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  background: linear-gradient(to right, #388e3c, #66bb6a);
+  color: white;
+
+  padding: 1.5rem 2rem;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: 500;
+  transition: opacity 0.3s;
+}
+
+nav a:hover {
+  opacity: 0.8;
+}
+
+nav a.active {
+  text-decoration: underline;
+}
+
+/* Search Section */
+.search-section {
+  background: white;
+  padding: 1.5rem 2rem;
+  margin: 1.5rem auto;
+  max-width: 900px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.05);
+}
+
+.search-section h2 {
+  margin-bottom: 1rem;
+  color: #2e7d32;
+}
+
+.search-section form {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+#locationInput {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  transition: border 0.2s;
+}
+
+#locationInput:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+.search-section button {
+  padding: 0.75rem 1.5rem;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.search-section button:hover {
+  background-color: #388e3c;
+}
+
+/* Map and List Section */
+.map-section {
+  display: flex;
+  gap: 1.5rem;
+  padding: 0 2rem 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#map {
+  flex: 2;
+  height: 500px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  min-width: 300px;
+}
+
+.location-list {
+  flex: 1;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  min-width: 250px;
+}
+
+.location-list h2 {
+  margin-bottom: 1rem;
+  color: #2e7d32;
+  font-size: 1.2rem;
+}
+
+.location-list ul {
+  list-style: none;
+}
+
+.location-list li {
+  margin-bottom: 0.6rem;
+  padding: 0.5rem;
+  background: #f1fdf5;
+  border-left: 4px solid #4caf50;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.location-list li:hover {
+  background: #e0f7ec;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .map-section {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  #map {
+    height: 400px;
+  }
+}

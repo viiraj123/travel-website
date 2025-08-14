@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Virtual Plant Nursery</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to bottom right, #ccebd0, #ffffff);
+      color: #2f4f4f;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #228B22; /* forest green */
+      padding: 20px 40px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .logo {
+      font-size: 2em;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    nav {
+      float: right;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #f5fffa; /* mint cream */
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #d0ffd0; /* light green */
+    }
+
+    marquee {
+      background-color: #145a32;
+      color: #fff;
+      font-size: 1.3em;
+      padding: 10px 0;
+      font-weight: bold;
+    }
+
+    .about {
+      background-image: url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1350&q=80');
+      background-size: cover;
+      background-position: center;
+      padding: 100px 20px;
+      color: #fff;
+      text-align: center;
+    }
+
+    .about h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      text-shadow: 1px 1px 3px #222;
+    }
+
+    .about p {
+      max-width: 800px;
+      margin: 20px auto;
+      font-size: 1.2em;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 25px;
+      background-color: #ffffff;
+      color: #2f4f4f;
+      font-weight: bold;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    .btn:hover {
+      background-color: #d4f5dd;
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: #228B22;
+      text-align: center;
+      padding: 15px;
+      color: #fff;
+      font-weight: 500;
+      margin-top: 50px;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        float: none;
+        margin-top: 15px;
+      }
+
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .about h2 {
+        font-size: 2em;
+      }
+
+      .about p {
+        font-size: 1em;
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">🌿 Virtual Plant Nursery</div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#search">Search Plants</a></li>
+        <li><a href="#">Care Tips</a></li>
+        <li><a href="#">Store</a></li>
+      </ul>
+    </nav>
+    <div style="clear: both;"></div>
+  </header>
+
+  <!-- Marquee -->
+  <marquee behavior="scroll" direction="left" scrollamount="6">
+    🌱 Welcome to the Virtual Plant Nursery — Explore, Learn, and Grow Green! 🌿
+  </marquee>
+
+  <section class="about">
+  <h2 style="color: darkgreen;">Welcome to Virtual Plant Nursery</h2>
+    <p>
+      At Virtual Plant Nursery, we bring the joy of greenery to your fingertips. Our goal is to make plant shopping simple and eco-friendly. Whether you're just getting started or you're a seasoned plant lover, we provide the guidance and greenery you need to build your own indoor jungle.
+    </p>
+    <p>
+      Discover a peaceful corner in your home with our handpicked plants, care resources, and expert support. We believe every space deserves a touch of green.
+    </p>
+    <a href="#" class="btn">Explore Our Collection</a>
+  </section>
+
+  <footer>
+    &copy; 2025 Virtual Plant Nursery | Grow with us 🌱
+  </footer>
+</body>
+</html>

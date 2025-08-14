@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RoamScape - Travel Gallery</title>
+  <link rel="stylesheet" href="gallery.css" />
+</head>
+<body>
+  <header>
+    <h1>RoamScape Travel Gallery</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="journal.html">Journal</a>
+      <a href="gallery.html" class="active">Gallery</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="upload-section">
+      <h2>Add a Memory</h2>
+      <form id="galleryForm">
+        <input type="text" id="location" placeholder="Location" required />
+        <input type="text" id="caption" placeholder="Caption" required />
+        <input type="file" id="imageInput" accept="image/*" required />
+        <button type="submit">Add Photo</button>
+      </form>
+    </section>
+
+    <section class="gallery-grid" id="galleryGrid">
+      <!-- Photos will be displayed here -->
+    </section>
+  </main>
+
+  <script>
+    const form = document.getElementById('galleryForm');
+    const gallery = document.getElementById('galleryGrid');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      const location = document.getElementById('location').value.trim();
+      const caption = document.getElementById('caption').value.trim();
+      const fileInput = document.getElementById('imageInput');
+      const file = fileInput.files[0];
+
+      if (file && location && caption) {
+        const reader = new FileReader();
+        reader.onload = () => {
+          const div = document.createElement('div');
+          div.className = 'photo-card';
+          div.innerHTML = `
+            <img src="${reader.result}" alt="Travel Photo" />
+            <div class="photo-info">
+              <p><strong>${location}</strong></p>
+              <p>${caption}</p>
+            </div>
+          `;
+          gallery.prepend(div);
+          form.reset();
+        };
+        reader.readAsDataURL(file);
+      }
+    });
+  </script>
+</body>
+</html>

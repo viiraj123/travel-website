@@ -1,0 +1,973 @@
+:root {
+    --primary-green: #388e3c; /* Dark Green for main elements */
+    --white: #ffffff;
+    --light-green: #66bb6a; /* Lighter Green for hover effects */
+    --shadow-color: rgba(101, 168, 112, 0.15);
+    --travel-background: url('https://source.unsplash.com/1600x900/?travel,adventure,landscape'); /* Background image */
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    background-color: var(--white);
+    color: var(--primary-green);
+    overflow-x: hidden;
+  }:root {
+    --primary-green: #388e3c; /* Dark Green for main elements */
+    --white: #ffffff;
+    --light-green: #66bb6a; /* Lighter Green for hover effects */
+    --shadow-color: rgba(0, 0, 0, 0.15);
+    --travel-background: url('https://source.unsplash.com/1600x900/?travel,adventure,landscape'); /* Background image */
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    background-color: var(--white);
+    color: var(--primary-green);
+    overflow-x: hidden;
+  }
+  
+  /* Header */
+  header {
+    background-color: var(--primary-green);
+    color: var(--white);
+    padding: 1.5rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px var(--shadow-color);
+  }
+  
+  header h1 {
+    font-size: 2rem;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  }
+  
+  nav ul li a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: var(--light-green); /* Hover effect for navigation */
+  }
+  
+  /* Hero Section with Travel Background */
+  .hero {
+    height: 80vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), var(--travel-background) no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 2rem;
+    color: var(--white);
+    position: relative;
+    overflow: hidden;
+    animation: travelAnimation 5s ease-in-out infinite;
+  }
+  
+  /* Floating cloud effect (background animation) */
+  @keyframes travelAnimation {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(20px); /* Moving clouds or elements */
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  .hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-green); /* Dark Green Heading */
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    animation: fadeInTop 1s ease forwards;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #fff; /* White text for readability */
+    animation: fadeInBottom 1.2s ease forwards;
+    font-weight: 400;
+  }
+  
+  /* Button styling */
+  .hero button {
+    padding: 12px 24px;
+    border: none;
+    background-color: var(--primary-green);
+    color: var(--white);
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    animation: slideIn 1.5s ease forwards;
+    box-shadow: 0 4px 8px var(--shadow-color);
+  }
+  
+  .hero button:hover {
+    background-color: var(--light-green); /* Light green for hover */
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 8px 16px var(--shadow-color);
+  }
+  
+  /* Animations */
+  @keyframes fadeInTop {
+    0% {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInBottom {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  /* Footer */
+  footer {
+    background-color: var(--primary-green);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
+    font-size: 1rem;
+    box-shadow: 0 -4px 8px var(--shadow-color);
+  }
+  :root {
+    --primary-green: #388e3c; /* Dark Green for main elements */
+    --white: #ffffff;
+    --light-green: #66bb6a; /* Lighter Green for hover effects */
+    --shadow-color: rgba(0, 0, 0, 0.15);
+    --travel-background: url('https://source.unsplash.com/1600x900/?travel,adventure,landscape'); /* Background image */
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    background-color: var(--white);
+    color: var(--primary-green);
+    overflow-x: hidden;
+  }
+  
+  /* Header */
+  header {
+    background-color: var(--primary-green);
+    color: var(--white);
+    padding: 1.5rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px var(--shadow-color);
+  }
+  
+  header h1 {
+    font-size: 2rem;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  }
+  
+  nav ul li a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: var(--light-green); /* Hover effect for navigation */
+  }
+  
+  /* Hero Section with Travel Background */
+  .hero {
+    height: 80vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), var(--travel-background) no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 2rem;
+    color: var(--white);
+    position: relative;
+    overflow: hidden;
+    animation: travelAnimation 5s ease-in-out infinite;
+  }
+  
+  /* Floating cloud effect (background animation) */
+  @keyframes travelAnimation {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(20px); /* Moving clouds or elements */
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  .hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-green); /* Dark Green Heading */
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    animation: fadeInTop 1s ease forwards;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #fff; /* White text for readability */
+    animation: fadeInBottom 1.2s ease forwards;
+    font-weight: 400;
+  }
+  
+  /* Button styling */
+  .hero button {
+    padding: 12px 24px;
+    border: none;
+    background-color: var(--primary-green);
+    color: var(--white);
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    animation: slideIn 1.5s ease forwards;
+    box-shadow: 0 4px 8px var(--shadow-color);
+  }
+  
+  .hero button:hover {
+    background-color: var(--light-green); /* Light green for hover */
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 8px 16px var(--shadow-color);
+  }
+  
+  /* Animations */
+  @keyframes fadeInTop {
+    0% {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInBottom {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  /* Footer */
+  footer {
+    background-color: var(--primary-green);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
+    font-size: 1rem;
+    box-shadow: 0 -4px 8px var(--shadow-color);
+  }
+  :root {
+    --primary-green: #388e3c; /* Dark Green for main elements */
+    --white: #ffffff;
+    --light-green: #66bb6a; /* Lighter Green for hover effects */
+    --shadow-color: rgba(0, 0, 0, 0.15);
+    --travel-background: url('https://source.unsplash.com/1600x900/?travel,adventure,landscape'); /* Background image */
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    background-color: var(--white);
+    color: var(--primary-green);
+    overflow-x: hidden;
+  }
+  
+  /* Header */
+  header {
+    background-color: var(--primary-green);
+    color: var(--white);
+    padding: 1.5rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px var(--shadow-color);
+  }
+  
+  header h1 {
+    font-size: 2rem;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  }
+  
+  nav ul li a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: var(--light-green); /* Hover effect for navigation */
+  }
+  
+  /* Hero Section with Travel Background */
+  .hero {
+    height: 80vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), var(--travel-background) no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 2rem;
+    color: var(--white);
+    position: relative;
+    overflow: hidden;
+    animation: travelAnimation 5s ease-in-out infinite;
+  }
+  
+  /* Floating cloud effect (background animation) */
+  @keyframes travelAnimation {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(20px); /* Moving clouds or elements */
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  .hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-green); /* Dark Green Heading */
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    animation: fadeInTop 1s ease forwards;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #fff; /* White text for readability */
+    animation: fadeInBottom 1.2s ease forwards;
+    font-weight: 400;
+  }
+  
+  /* Button styling */
+  .hero button {
+    padding: 12px 24px;
+    border: none;
+    background-color: var(--primary-green);
+    color: var(--white);
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    animation: slideIn 1.5s ease forwards;
+    box-shadow: 0 4px 8px var(--shadow-color);
+  }
+  
+  .hero button:hover {
+    background-color: var(--light-green); /* Light green for hover */
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 8px 16px var(--shadow-color);
+  }
+  
+  /* Animations */
+  @keyframes fadeInTop {
+    0% {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInBottom {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  /* Footer */
+  footer {
+    background-color: var(--primary-green);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
+    font-size: 1rem;
+    box-shadow: 0 -4px 8px var(--shadow-color);
+  }
+  :root {
+    --primary-green: #388e3c; /* Dark Green for main elements */
+    --white: #ffffff;
+    --light-green: #66bb6a; /* Lighter Green for hover effects */
+    --shadow-color: rgba(0, 0, 0, 0.15);
+    --travel-background: url('https://source.unsplash.com/1600x900/?travel,adventure,landscape'); /* Background image */
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    background-color: var(--white);
+    color: var(--primary-green);
+    overflow-x: hidden;
+  }
+  
+  /* Header */
+  header {
+    background-color: var(--primary-green);
+    color: var(--white);
+    padding: 1.5rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px var(--shadow-color);
+  }
+  
+  header h1 {
+    font-size: 2rem;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  }
+  
+  nav ul li a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: var(--light-green); /* Hover effect for navigation */
+  }
+  
+  /* Hero Section with Travel Background */
+  .hero {
+    height: 80vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), var(--travel-background) no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 2rem;
+    color: var(--white);
+    position: relative;
+    overflow: hidden;
+    animation: travelAnimation 5s ease-in-out infinite;
+  }
+  
+  /* Floating cloud effect (background animation) */
+  @keyframes travelAnimation {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(20px); /* Moving clouds or elements */
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  .hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-green); /* Dark Green Heading */
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    animation: fadeInTop 1s ease forwards;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #fff; /* White text for readability */
+    animation: fadeInBottom 1.2s ease forwards;
+    font-weight: 400;
+  }
+  
+  /* Button styling */
+  .hero button {
+    padding: 12px 24px;
+    border: none;
+    background-color: var(--primary-green);
+    color: var(--white);
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    animation: slideIn 1.5s ease forwards;
+    box-shadow: 0 4px 8px var(--shadow-color);
+  }
+  
+  .hero button:hover {
+    background-color: var(--light-green); /* Light green for hover */
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 8px 16px var(--shadow-color);
+  }
+  
+  /* Animations */
+  @keyframes fadeInTop {
+    0% {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInBottom {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  /* Footer */
+  footer {
+    background-color: var(--primary-green);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
+    font-size: 1rem;
+    box-shadow: 0 -4px 8px var(--shadow-color);
+  }
+  :root {
+    --primary-green: #388e3c; /* Dark Green for main elements */
+    --white: #ffffff;
+    --light-green: #66bb6a; /* Lighter Green for hover effects */
+    --shadow-color: rgba(0, 0, 0, 0.15);
+    --travel-background: url('https://images.pexels.com/photos/4840134/pexels-photo-4840134.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'); /* Background image */
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    background-color: var(--white);
+    color: var(--primary-green);
+    overflow-x: hidden;
+  }
+  
+  /* Header */
+  header {
+    background-color: var(--primary-green);
+    color: var(--white);
+    padding: 1.5rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px var(--shadow-color);
+  }
+  
+  header h1 {
+    font-size: 2rem;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  }
+  
+  nav ul li a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: var(--light-green); /* Hover effect for navigation */
+  }
+  
+  /* Hero Section with Travel Background */
+  .hero {
+    height: 80vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), var(--travel-background) no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 2rem;
+    color: var(--white);
+    position: relative;
+    overflow: hidden;
+    animation:reverse 5s ease-in-out infinite;
+  }
+  
+  /* Floating cloud effect (background animation) */
+  @keyframes travelAn {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(20px); /* Moving clouds or elements */
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  .hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-green); /* Dark Green Heading */
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    animation: fadeInTop 1s ease forwards;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #fff; /* White text for readability */
+    animation: fadeInBottom 1.2s ease forwards;
+    font-weight: 400;
+  }
+  
+  /* Button styling */
+  .hero button {
+    padding: 12px 24px;
+    border: none;
+    background-color: var(--primary-green);
+    color: var(--white);
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    animation: slideIn 1.5s ease forwards;
+    box-shadow: 0 4px 8px var(--shadow-color);
+  }
+  
+  .hero button:hover {
+    background-color: var(--light-green); /* Light green for hover */
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 8px 16px var(--shadow-color);
+  }
+  
+  /* Animations */
+  @keyframes fadeInTop {
+    0% {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInBottom {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  /* Footer */
+  footer {
+    background-color: var(--primary-green);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
+    font-size: 1rem;
+    box-shadow: 0 -4px 8px var(--shadow-color);
+  }
+          
+  
+  /* Header */
+  header {
+    background-color: var(--primary-green);
+    color: var(--white);
+    padding: 1.5rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px var(--shadow-color);
+  }
+  
+  header h1 {
+    font-size: 2rem;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  }
+  
+  nav ul li a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: var(--light-green); /* Hover effect for navigation */
+  }
+  
+  /* Hero Section with Travel Background */
+  .hero {
+    height: 80vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), var(--travel-background) no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 2rem;
+    color: var(--white);
+    position: relative;
+    overflow: hidden;
+    
+  }
+  
+
+  .hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-green); /* Dark Green Heading */
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    animation: fadeInTop 1s ease forwards;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #fff; /* White text for readability */
+    animation: fadeInBottom 1.2s ease forwards;
+    font-weight: 400;
+  }
+  
+  /* Button styling */
+  .hero button {
+    padding: 12px 24px;
+    border: none;
+    background-color: var(--primary-green);
+    color: var(--white);
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    animation: slideIn 1.5s ease forwards;
+    box-shadow: 0 4px 8px var(--white);
+  }
+  
+  .hero button:hover {
+    background-color: var(--light-green); /* Light green for hover */
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 8px 16px var(--light-green);
+  }
+  
+  /* Animations */
+  @keyframes fadeInTop {
+    0% {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInBottom {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  /* Footer */
+  footer {
+    background-color: var(--primary-green);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
+    font-size: 1rem;
+    box-shadow: 0 -4px 8px var(--shadow-color);
+  }
+  

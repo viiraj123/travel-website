@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Add Friends | RoamScape</title>
+  <link rel="stylesheet" href="add-friends.css" />
+</head>
+<body>
+  <header>
+    <h1>RoamScape - Add Friends</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="journal.html">Journal</a>
+      <a href="map.html">Map</a>
+      <a href="add-friends.html" class="active">Friends</a>
+    </nav>
+  </header>
+
+  <main class="friend-section">
+    <h2>Add Friends by Username</h2>
+    <form id="friendForm">
+      <input type="text" id="usernameInput" placeholder="Enter username" required />
+      <button type="submit">Add Friend</button>
+    </form>
+
+    <div class="friend-list">
+      <h3>Friends List</h3>
+      <ul id="friendsUl">
+        <!-- Friend usernames will appear here -->
+      </ul>
+    </div>
+  </main>
+
+  <script>
+    const form = document.getElementById('friendForm');
+    const input = document.getElementById('usernameInput');
+    const friendsUl = document.getElementById('friendsUl');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const username = input.value.trim();
+      if (username) {
+        const li = document.createElement('li');
+        li.textContent = username;
+        friendsUl.appendChild(li);
+        input.value = '';
+      }
+    });
+  </script>
+</body>
+</html>
